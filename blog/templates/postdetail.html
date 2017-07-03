@@ -14,7 +14,7 @@
                 <div class="row">
                     <div class="col-xs-9">
                         {% if post.image %}
-              <img src="/media/{{ post.image}}">
+              <img width='500px' src="{{ MEDIA_URL }}{{ post.image }}">
                           {% endif %}
                         <p>{{ post.content|linebreaks }}</p>
                         <p><button class="btn btn-default" onclick="location.href='/'">Back to Blog</button></p>
